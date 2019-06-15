@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    background-color: white;
+    color: black;
+    display: flex;
+    padding: 10px 5px;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    margin-left: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 30px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+/* main content */
+
+.main-container {
+    background-color: #f7f7f7;
+}
+
+.centre {
+    background-color: white;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+figure .img {
+    background-image: url(images/book-item.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    background-size: contain;
+    background-color: #cccccc;
+    min-width: 40%;
+}
+
+figcaption {
+    margin-left: 10px;
+}
+
+.book-name p {
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+.book-name {
+    padding-bottom: 20px;
+}
+
+.book-name h1 {
+    margin: 0;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.ratings i {
+    font-size: 18px;
+}
+
+.price {
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    padding: 20px 0px;
+}
+
+.price h2 {
+    margin: 0;
+}
+
+.price-details {
+    display: flex;
+}
+
+.price-details h2 {
+    font-size: 18px;
+}
+
+.pricing {
+    margin-left: 25px;
+}
+
+.pricing .p1, .p2 {
+    margin: 0;
+}
+
+.pricing .p2 {
+    font-size: 20px;
+    color: #b12805;
+}
+
+.pricing .p3 {
+    margin-top: 0;
+    font-size: 12px;
+    color: #b12805;
+}
+
+button {
+    background-color: #f2849e;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 75px;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+/* paragraphs */
+
+section {
+    max-width: 66%;
+    margin: auto;
+}
+
+.product-detail span, blockquote span {
+    font-weight: bold;
+}
+
+.product-detail h1, .about-author p {
+    letter-spacing: 2px;
+}
+
+.ratings {
+    color: #f8b835;
+}
+
+/* about */
+
+.about-book, .about-author {
+    border-top: 2px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+    padding: 30px 0px;
+}
+
+.about-book p, blockquote {
+    text-align: justify;
+}
+
+.about-book a {
+    text-decoration: none;
+    margin: 0;
+}
+
+.about-book p {
+    text-align: justify;
+    line-height: 1.4;
+    margin: 0px;
+}
+
+.product-detail {
+    padding: 30px 0px;
+}
+
+.last-line p, .ratings {
+    display: inline-block;
+    margin: 0;
+}
+
+/* about author */
+
+.about-author p, .product-detail h1 {
+    margin-top: 0;
+}
+
+blockquote {
+    margin: 0px 10px;
+}
+
+@media (max-width:900px) {
+    .menu-bar {
+        display: flex;
+        margin-right: 20px;
+        font-size: 22px;
+    }
+    .nav {
+        display: none;
+    }
+    section {
+        max-width: 79%;
+        margin: auto;
+    }
+}
+
+@media (max-width:700px) {
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-bar {
+        display: flex;
+        margin-right: 20px;
+        font-size: 22px;
+    }
+    .nav {
+        display: none;
+    }
+}
